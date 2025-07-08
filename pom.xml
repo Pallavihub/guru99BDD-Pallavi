@@ -14,8 +14,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <dependencies>
-    <dependency>
+    <dependencies>
+
+		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.9</version>
@@ -86,5 +87,24 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.27.0</version>
 		</dependency>
-  </dependencies>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.3.0</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>src/test/resources/XmlFiles/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+
+			</plugin>
+
+		</plugins>
+
+	</build>
 </project>
