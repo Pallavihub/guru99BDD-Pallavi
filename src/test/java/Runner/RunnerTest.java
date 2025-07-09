@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features="src/test/java/FeatureFiles/TC_001_RegisterUser.feature",
+		features="src/test/java/FeatureFiles",
 		glue="Steps",
 		dryRun=false
 		)

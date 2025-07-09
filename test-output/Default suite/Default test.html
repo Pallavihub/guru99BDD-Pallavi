@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 07 20:25:28 IST 2025</td>
+<td>Started on:</td><td>Wed Jul 09 16:42:51 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19372 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17852 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,26 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Test end to end guru99 fuctionality"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.guru.ui.pageLayer.RegisterPage.user_click_on_submit_button()&quot; because &quot;this.registerPage&quot; is null
+	at Steps.RegisterPageSteps.user_click_on_submit_button(RegisterPageSteps.java:43)
+	at ✽.user click on submit button(file:///D:/Software%20Testing/SoftTech_Classes_1st%20march/Jenkins/Test%20Lead%20Workspace/guru99Framework/src/test/java/FeatureFiles/TC_002_Login.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1943444495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1943444495'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.guru.ui.pageLayer.RegisterPage.user_click_on_submit_button()&quot; because &quot;this.registerPage&quot; is null
+	at Steps.RegisterPageSteps.user_click_on_submit_button(RegisterPageSteps.java:43)
+	at ✽.user click on submit button(file:///D:/Software%20Testing/SoftTech_Classes_1st%20march/Jenkins/Test%20Lead%20Workspace/guru99Framework/src/test/java/FeatureFiles/TC_002_Login.feature:7)
+</pre></div></td>
+<td>3</td>
+<td>Runner.RunnerTest@2a4fb17b</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,8 +97,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='Runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Test guru99 End to End Functionality"</td>
 <td></td>
-<td>19</td>
-<td>Runner.RunnerTest@368f2016</td></tr>
+<td>14</td>
+<td>Runner.RunnerTest@2a4fb17b</td></tr>
 </table><p>
 </body>
 </html>

@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 
 public class RegisterPageSteps extends BaseClass{
 	
-	RegisterPage registerPage;
+	public static RegisterPage registerPage;
 	
 @Given("user is on register Page")
 public void user_is_on_register_page() {

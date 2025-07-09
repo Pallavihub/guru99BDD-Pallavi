@@ -8,7 +8,7 @@ import com.guru.ui.baseLayer.BaseClass;
 
 public class RegisterPage extends BaseClass{
 	
-
+	
 public void user_is_on_register_page(String url) {
     
 	BaseClass.initialization(url);
@@ -37,8 +37,13 @@ public void user_enter_mailing_information(String address, String city, String s
 
 public void user_enter_user_information(String userName, String pass, String confirmPass) {
     
-	driver.findElement(By.name("email")).sendKeys(userName);
-	driver.findElement(By.name("password")).sendKeys(pass);
+	WebElement uName=driver.findElement(By.name("email"));
+	uName.sendKeys(userName);
+	
+	WebElement Pwd=driver.findElement(By.name("password"));
+	Pwd.sendKeys(pass);
+	
+	
 	driver.findElement(By.name("confirmPassword")).sendKeys(confirmPass);
 }
 
